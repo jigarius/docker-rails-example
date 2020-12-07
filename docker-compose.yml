@@ -1,0 +1,19 @@
+version: "3.9"
+services:
+  database:
+    image: 'docker.io/bitnami/mariadb:10.3-debian-10'
+    env_file:
+      - .env
+    volumes:
+      - ./docker/volumes/database::/bitnami/mariadb
+  web:
+    tty: true
+    image: docker.io/bitnami/rails:6-debian-10
+    env_file:
+      - .env
+    depends_on:
+      - database
+    ports:
+      - 3000:3000
+    volumes:
+      - ./ror:/app
