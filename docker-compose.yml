@@ -5,7 +5,7 @@ services:
     env_file:
       - .env
     volumes:
-      - ./docker/volumes/database::/bitnami/mariadb
+      - ./docker/volumes/database:/bitnami/mariadb
   web:
     tty: true
     image: docker.io/bitnami/rails:6-debian-10
