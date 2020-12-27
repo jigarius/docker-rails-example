@@ -14,9 +14,14 @@ just make sure the `ror` directory is empty. After that, follow these steps:
   * Put the files of your existing Rails app in the `ror` directory.
     * The `Gemfile` should be at `ror/Gemfile`.
     * Skip this step if you don't have an existing Rails app.
-  * Run the following command.
+  * Boot up the application.
     ```
     docker-compose up
+    ```
+  * When you see the following message, press `Ctrl+C`.
+    ```
+    Listening on http://0.0.0.0:3000
+    Use Ctrl+C to stop
     ```
   * Create `config/database.yml` based on `docker/ror/example.database.yml`.
   * Boot up the application (again).
