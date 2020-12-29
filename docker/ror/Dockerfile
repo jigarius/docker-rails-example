@@ -13,7 +13,6 @@ WORKDIR /ror
 COPY ./ror /ror
 RUN gem install bundler
 RUN bundle install
-RUN bundle exec rails webpacker:install
 
 # Configure endpoint.
 COPY ./docker/ror/entrypoint.sh /usr/bin/
