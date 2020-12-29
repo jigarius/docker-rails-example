@@ -48,6 +48,7 @@ If you want to start with a Rails app from scratch,
     ```
     docker-compose run --no-deps web rails new . --force --database=postgresql
     ```
+    * For a quick Rails install, use the `--minimal` flag.
 
 ## Commands
 
