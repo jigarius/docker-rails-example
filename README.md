@@ -13,11 +13,11 @@ follow these steps:
 
   * Destroy any existing containers with conflicting names.
   * Copy `.env.example` to `.env` and modify (if required).
+  * Create `config/database.yml` based on `docker/ror/example.database.yml`.
   * Build an image for Ruby on Rails:
     ```
     docker-compose build
     ```
-  * Create `config/database.yml` based on `docker/ror/example.database.yml`.
   * Boot up the app by running:
     ```
     docker-compose up
