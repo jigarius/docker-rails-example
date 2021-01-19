@@ -13,7 +13,7 @@ follow these steps:
 
   * Destroy any existing containers with conflicting names.
   * Copy `.env.example` to `.env` and modify (if required).
-  * Create `config/database.yml` based on `docker/ror/example.database.yml`.
+  * Create `config/database.yml` based on `.docker/ror/example.database.yml`.
   * Build an image for Ruby on Rails:
     ```
     docker-compose build
@@ -41,7 +41,7 @@ Cool! Now your Rails app should be available at
 If you want to start with a Rails app from scratch,
 
   * Create the following files:
-    * `Gemfile`: You can base this on `docker/ror/example.Gemfile`.
+    * `Gemfile`: You can base this on `.docker/ror/example.Gemfile`.
     * `Gemfile.lock`: An empty file.
   * Run the following command to install Rails. You can modify the params for
     the `rails new` command as needed.

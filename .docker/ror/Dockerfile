@@ -15,7 +15,7 @@ RUN gem install bundler
 RUN bundle install
 
 # Configure endpoint.
-COPY ./docker/ror/entrypoint.sh /usr/bin/
+COPY ./.docker/ror/entrypoint.sh /usr/bin/
 RUN chmod +x /usr/bin/entrypoint.sh
 ENTRYPOINT ["entrypoint.sh"]
 EXPOSE 3000
