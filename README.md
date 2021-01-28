@@ -24,7 +24,7 @@ follow these steps:
     ```
   * Create databases by running:
     ```
-      docker-compose run web rake db:create
+      docker-compose exec web rake db:create
     ```
 
 Cool! Now your Rails app should be available at
