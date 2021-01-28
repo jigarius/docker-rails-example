@@ -1,15 +1,16 @@
 desc "SSH into a service. Defaults to 'web'."
-task :ssh, [:service] do |_t, args|
-  args.with_defaults(service: 'web')
-  sh "docker-compose exec #{args[:service]} bash"
+task :ssh do
+  service = ENV.fetch('SERVICE', 'web')
+  sh "docker-compose exec #{service} bash"
 end
 
 desc "Launch IRB"
 task :irb do
-  sh "docker exec web irb"
+  sh "docker-compose exec web irb"
 end
 
-desc "Launch Rails Console"
-task :console do
-  sh "docker exec web rails console"
+desc "Run a Rails command, e.g. rake rails CMD=version"
+task :rails do
+  cmd = ENV.fetch('CMD', 'version')
+  sh "docker-compose exec web rails #{cmd}"
 end
