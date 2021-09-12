@@ -3,7 +3,7 @@
 A simple example of using Docker Compose for developing and deploying
 Ruby on Rails applications.
 
-Read the full article on [jigarius.com](/blog/ruby-on-rails-with-docker-compose).
+Read the full article on [jigarius.com](https://jigarius.com/blog/ruby-on-rails-with-docker-compose).
 
 ## Getting started
 
