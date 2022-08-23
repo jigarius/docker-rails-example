@@ -60,3 +60,8 @@ Here are some helpful commands.
 
 See [docker compose docs](https://docs.docker.com/compose/) for further info on
 Docker Compose.
+
+
+### Infrastructure model
+
+![Infrastructure model](.infragenie/infrastructure_model.png)
